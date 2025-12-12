@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import { useLeave } from '../../context/LeaveContext';
-import { Card, CardContent, CardHeader, CardTitle } from '../../components/ui/Card';
+import { Card, CardContent } from '../../components/ui/Card';
 import { Button } from '../../components/ui/Button';
-import { StatusBadge } from '../../components/ui/StatusBadge';
 import { Modal } from '../../components/ui/Modal';
 import { Input } from '../../components/ui/Input';
-import { differenceInBusinessDays, parseISO } from 'date-fns';
 
 export const AdminDashboard: React.FC = () => {
     const { leaveRequests, users, updateLeaveRequestStatus, currentUser } = useLeave();

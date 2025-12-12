@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { useLeave } from '../../context/LeaveContext';
-import { Card, CardContent, CardHeader, CardTitle } from '../../components/ui/Card';
+import { Card } from '../../components/ui/Card';
 import { Button } from '../../components/ui/Button';
 import { Input } from '../../components/ui/Input';
 import { Modal } from '../../components/ui/Modal';
 import { User, UserRole } from '../../types';
-import { Trash2, UserPlus, FileKey } from 'lucide-react';
+import { Trash2, UserPlus } from 'lucide-react';
 
 export const EmployeeManagement: React.FC = () => {
     const { users, addUser, removeUser } = useLeave();

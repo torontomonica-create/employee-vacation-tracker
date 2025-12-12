@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet, useNavigate, useLocation } from 'react-router-dom';
 import { useLeave } from '../context/LeaveContext';
-import { LogOut, LayoutDashboard, Users, User as UserIcon, Calendar, Menu } from 'lucide-react';
+import { LogOut, LayoutDashboard, Users, Calendar, Menu } from 'lucide-react';
 import { cn } from './ToastContainer';
 
 export const Layout: React.FC = () => {

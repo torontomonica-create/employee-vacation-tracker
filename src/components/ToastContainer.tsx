@@ -1,10 +1,10 @@
 import React from 'react';
 import { useLeave } from '../context/LeaveContext';
 import { X, CheckCircle, AlertCircle, Info } from 'lucide-react';
-import { clsx } from 'clsx';
+import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
-export function cn(...inputs: (string | undefined | null | false)[]) {
+export function cn(...inputs: ClassValue[]) {
     return twMerge(clsx(inputs));
 }
 

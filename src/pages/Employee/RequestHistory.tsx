@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLeave } from '../../context/LeaveContext';
-import { Card, CardContent, CardHeader, CardTitle } from '../../components/ui/Card';
+import { Card } from '../../components/ui/Card';
 import { StatusBadge } from '../../components/ui/StatusBadge';
 
 export const RequestHistory: React.FC = () => {

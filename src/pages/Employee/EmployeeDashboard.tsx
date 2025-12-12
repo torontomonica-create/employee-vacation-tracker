@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '../../components/ui/Ca
 import { Button } from '../../components/ui/Button';
 import { Input } from '../../components/ui/Input';
 import { LeaveType } from '../../types';
-import { differenceInBusinessDays, parseISO, isAfter, isBefore } from 'date-fns';
+import { differenceInBusinessDays, parseISO, isBefore } from 'date-fns';
 import { PieChart, Clock, CalendarCheck } from 'lucide-react';
 
 export const EmployeeDashboard: React.FC = () => {

@@ -1,7 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { User, LeaveRequest, Notification, LeaveType } from '../types';
+import { User, LeaveRequest, Notification } from '../types';
 import { initialUsers, initialLeaveRequests } from '../data/mockData';
-import { v4 as uuidv4 } from 'uuid'; // We might need to install uuid or just use separate random ID generator
 
 // Simple ID generator if we don't want to install uuid
 const generateId = () => Math.random().toString(36).substr(2, 9);
