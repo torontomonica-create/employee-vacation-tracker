@@ -60,7 +60,12 @@ export const EmployeeDashboard: React.FC = () => {
 
     return (
         <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-slate-800">My Dashboard</h2>
+            <div className="flex justify-between items-center">
+                <h2 className="text-2xl font-bold text-slate-800">My Dashboard</h2>
+                <Button variant="secondary" onClick={() => window.location.href = '/employee/history'}>
+                    View Request History
+                </Button>
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <Card>
