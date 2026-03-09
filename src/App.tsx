@@ -12,7 +12,16 @@ import { RequestHistory } from './pages/Employee/RequestHistory';
 
 // Simple Protected Route Wrapper
 const ProtectedRoute: React.FC<{ children: React.ReactNode; allowedRole?: 'Admin' | 'Employee' }> = ({ children, allowedRole }) => {
-    const { currentUser } = useLeave();
+    const { currentUser, loading } = useLeave();
+
+    if (loading) {
+        return (
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
+                <div style={{ width: 32, height: 32, border: '3px solid #e5e7eb', borderTopColor: '#6366f1', borderRadius: '50%', animation: 'spin 0.8s linear infinite' }} />
+                <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
+            </div>
+        );
+    }
 
     if (!currentUser) {
         return <Navigate to="/login" replace />;
